@@ -5,20 +5,19 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function Cita() {
-  return (
-    <>
-    <label htmlFor="NombreMascota">Nombre Mascota</label>
-    <input type="text" id="NombreMascota"/>
+    return (
+        <>
+            <label htmlFor="NombreMascota">Nombre Mascota</label>
+            <input type="text" id="NombreMascota" />
 
 
-    <label htmlFor="NombreMascota">Nombre Mascota</label>
-    <input type="text" id="NombreMascota"/>
+            <label htmlFor="NombreDueño">Nombre Dueño</label>
+            <input type="text" id="NombreDueño" />
 
-    <label htmlFor="NombreMascota">Nombre Mascota</label>
-    <input type="text" id="NombreMascota"/>
-
-    </>
-  )
+            <label htmlFor="Fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" className="u-full-width" defaultValue="" />
+        </>
+    )
 }
 
 export default Cita
