@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './Cita.css'
+import './App.css'
 
-function AdministrarCita(Mascota, Dueño, Fecha, Hora, Sintomas) {
+function AdministrarCita({ Mascota, Dueño, Fecha, Hora, Sintomas }) {
   return (
-    <>
-      <label htmlFor="Mascota">Mascota: {Mascota}</label>
-      <label htmlFor="Dueño">Dueño: {Dueño}</label>
-      <label htmlFor="Fecha">Fecha: {Fecha}</label>
-      <label htmlFor="Hora">Hora: {Hora} </label>
-      <label htmlFor="Sintomas">Sintomas: {Sintomas}</label>
-      <button>Eliminar ×</button>
-    </>
+    <div className="cita">
+      <p>Mascota: <span>{Mascota}</span></p>
+      <p>Dueño: <span>{Dueño}</span></p>
+      <p>Fecha: <span>{Fecha}</span></p>
+      <p>Hora: <span>{Hora}</span></p>
+      <p>Sintomas: <span>{Sintomas}</span></p>
+      <button className="button eliminar u-full-width">Eliminar ×</button>
+    </div>
   )
 }
 
