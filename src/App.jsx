@@ -8,6 +8,10 @@ function App() {
   const agregarCita = (nuevaCita) => {
     setCitas([...citas, nuevaCita])
   }
+  const eliminarCita = (indexEliminar) => {
+  const nuevasCitas = citas.filter((_, index) => index !== indexEliminar);
+  setCitas(nuevasCitas);
+};
   return (
     <>
       <main>
@@ -21,7 +25,7 @@ function App() {
 
             <div className="one-half column">
               <h2>Administra tus citas</h2>
-              <ListaCitas citas={citas} />
+              <ListaCitas citas={citas} eliminarCita={eliminarCita} />
             </div>
           </div>
         </div>
